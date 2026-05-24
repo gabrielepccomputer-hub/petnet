@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetNet 🐾 - Benvenuti</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fdf5e6 0%, #ffe4b5 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-card {
+            background: white;
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 350px;
+        }
+
+        h1 { color: #ff9f43; font-size: 2.5rem; margin-bottom: 10px; }
+        p { color: #666; margin-bottom: 30px; }
+
+        #loginBtn {
+            background: #ff9f43;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        #loginBtn:hover {
+            transform: scale(1.05);
+            background: #ff8c00;
+            box-shadow: 0 5px 15px rgba(255,159,67,0.4);
+        }
+
+        .paw { font-size: 40px; animation: bounce 2s infinite; display: inline-block; }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    </style>
+</head>
+<body>
+
+<div class="login-card">
+    <div class="paw">🐾</div>
+    <h1>PetNet</h1>
+    <p>Condividi le avventure del tuo migliore amico!</p>
+    <button id="loginBtn">Accedi con Google</button>
+</div>
+
+<script type="module" src="login.js"></script>
+</body>
+</html>
